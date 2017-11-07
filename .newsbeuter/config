@@ -1,0 +1,33 @@
+color listfocus magenta black
+color listnormal white black
+color background white default
+color article white black
+color listnormal_unread red black
+color listfocus_unread magenta black
+color info red black
+browser w3m
+keep-articles-days 30
+notify-always yes
+notify-format "%d New Articles"
+notify-program "/usr/bin/notify-send"
+auto-reload yes
+reload-time 120
+save-path "~/.newsbeuter/saved-articles"
+
+# Hide read articles
+show-read-articles no
+
+# Navigation
+bind-key h quit
+bind-key j down
+bind-key k up
+bind-key l open
+
+# Confirm exit
+confirm-exit no
+
+# Set the number of articles to maximally keep per feed. If the number is set to 0, then all articles are kept.
+#max-items 100
+
+# If set to "yes", then all read articles will be deleted when you quit newsbeuter. 
+#delete-read-articles-on-quit yes
