@@ -1,0 +1,147 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  handle_size = 1
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      command = ""
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      profile = default
+      size = 1050, 450
+      type = Window
+  [[news]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 60dd6efc-615e-4aa8-84ee-0b5c08707ad5
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1280, 751
+      title = News
+      type = Window
+    [[[terminal1]]]
+      command = newsbeuter; bash
+      order = 0
+      parent = child0
+      profile = weechat
+      type = Terminal
+      uuid = 60dd6efc-615e-4aa8-84ee-0b5c08707ad5
+  [[ranger]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 6413e9a4-2bfe-4fd2-a669-2bd910a49642
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1280, 780
+      title = Ranger
+      type = Window
+    [[[terminal1]]]
+      command = ranger; bash
+      order = 0
+      parent = child0
+      profile = None
+      type = Terminal
+      uuid = 6413e9a4-2bfe-4fd2-a669-2bd910a49642
+  [[weemuttmpd]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 7f2a81f7-777e-464b-9de5-2902c990fedb
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1280, 770
+      title = WeeMutt
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 365
+      ratio = 0.474675324675
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 925
+      ratio = 0.723046875
+      type = HPaned
+    [[[terminal3]]]
+      command = ""
+      order = 0
+      parent = child2
+      profile = weechat
+      type = Terminal
+      uuid = a24428fa-a71c-4216-93b4-d7bb647a2739
+    [[[terminal4]]]
+      command = mpd; ncmpcpp; bash
+      order = 1
+      parent = child2
+      profile = weechat
+      type = Terminal
+      uuid = 43c46489-03d0-4fce-82f5-65c1be8f3959
+    [[[terminal5]]]
+      command = mutt; bash
+      order = 1
+      parent = child1
+      profile = mutt
+      type = Terminal
+      uuid = 7f2a81f7-777e-464b-9de5-2902c990fedb
+[plugins]
+[profiles]
+  [[default]]
+    allow_bold = False
+    audible_bell = True
+    background_color = "#1c1c1c"
+    background_darkness = 0.9
+    background_image = None
+    copy_on_selection = True
+    cursor_blink = False
+    cursor_color = "#505050"
+    font = SauceCodePro Nerd Font Medium 10
+    foreground_color = "#a0a0a0"
+    palette = "#1c1c1c:#ff535a:#63e463:#ffe863:#5f819d:#b7416e:#5e8d87:#707880:#4d4d4d:#cc6666:#b5bd68:#f0c674:#81a2be:#bb4466:#8abeb7:#c5c8c6"
+    scroll_background = False
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    urgent_bell = True
+    use_system_font = False
+  [[mutt]]
+    audible_bell = True
+    background_color = "#1c1c1c"
+    background_image = None
+    copy_on_selection = True
+    cursor_blink = False
+    font = Source Code Pro Light 10
+    foreground_color = "#a0a0a0"
+    palette = "#1c1c1c:#ff535a:#b7ce42:#fea63c:#66aabb:#75507b:#232323:#a0a0a0:#4d4d4d:#ff535a:#bde077:#ffe863:#aaccbb:#ad7fa8:#5e7175:#6c887a"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    urgent_bell = True
+    use_system_font = False
+  [[weechat]]
+    allow_bold = False
+    background_color = "#1c1c1c"
+    background_darkness = 0.13
+    background_image = None
+    copy_on_selection = True
+    cursor_blink = False
+    font = Source Code Pro Light 10
+    foreground_color = "#a0a0a0"
+    palette = "#1c1c1c:#ff535a:#b7ce42:#fea63c:#66aabb:#b7416e:#5e7175:#a0a0a0:#4d4d4d:#ff535a:#bde077:#ffe863:#aaccbb:#bb4466:#a3babf:#6c887a"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
